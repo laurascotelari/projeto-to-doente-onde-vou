@@ -1,4 +1,4 @@
-.symptom-container{
+.symptom-type-container{
   border: 2px solid var(--light_gray);
   padding: 10px;
   border-radius: 10px;
@@ -6,7 +6,7 @@
   margin: 20px auto;
 }
 
-.symptom-container h3 {
+.symptom-type-container h3 {
   font-weight: 100;
   font-size: 1.3vw;
   font-family: 'Lato', sans-serif;
@@ -17,7 +17,10 @@
   display: flex;
   justify-content: space-between;
 }
-
+.symptom-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .symptom-name-container {
   display: flex;
   margin-top: 8px;

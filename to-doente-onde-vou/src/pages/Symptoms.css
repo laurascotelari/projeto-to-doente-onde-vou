@@ -1,3 +1,17 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+  }
+
+.symptom-types-container{
+    width: 100%;
+    height: 65vh;
+    overflow: scroll;
+}
+
 h1{
     width: 70%;
     font-family: 'Lato', sans-serif;

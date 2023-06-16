@@ -16,7 +16,6 @@ import './App.css';
 import Symptoms from "./pages/Symptoms.js";
 import UPA from "./pages/UPA.js";
 import UBS from "./pages/UBS.js";
-import NoPage from "./pages/NoPage.js";
 
 // Criando contexto que mantem dados de usuario e repassa para componentes que necessitem dessa
 // informacao.
@@ -26,22 +25,119 @@ function App() {
   // Controle da aplicacao em geral. Aqui, tem os roteamentos e os contextos necessarios para o bom funcionamento
   // da navegacao pelo site.
 
+  //lista de sintomas gerais
   const generalSymptomsList = [
     {
       id: 1,
       name: "Falta de Ar",
+      risk: 1
     },
     {
       id: 2,
       name: "Sinais de Choque",
+      risk: 1
     },
     {
       id: 3,
       name: "Dor Intensa",
+      risk: "orange"
     },
     {
       id: 4,
-      name: "Febre Alta > 39ºC",
+      name: "Febre Alta (maior que 39ºC)",
+      risk: "orange"
+    },
+    {
+      id: 5,
+      name: "Dor Moderada",
+      risk: 2
+    },
+    {
+      id: 6,
+      name: "Febre Moderada(entre 38ºC e 39ºC)",
+      risk: 2
+    },
+    {
+      id: 7,
+      name: "Dor Leve",
+      risk: 3
+    },
+    {
+      id: 8,
+      name: "Febre Baixa(entre 37,5ºC e 37,9ºC)",
+      risk: 3
+    }
+  ];
+
+  //lista de sintomas respiratorios
+  const respiratorySymptomsList = [
+    {
+      id: 1,
+      name: "Estridor",
+      risk: 1
+    },
+    {
+      id: 2,
+      name: "Dispneia de Início súbito após trauma",
+      risk: "orange"
+    },
+    {
+      id: 3,
+      name: "Dispneia moderada",
+      risk: 2
+    },
+    {
+      id: 4,
+      name: "Nariz entupido com secreção amarelada",
+      risk: 3
+    },
+    {
+      id: 5,
+      name: "Tosse persistente",
+      risk: 3
+    }
+  ];
+
+  //lista de sintomas respiratorios
+  const abdominalPainSymptomsList = [
+    {
+      id: 1,
+      name: "Hemorragia",
+      risk: 1
+    },
+    {
+      id: 2,
+      name: "Trauma abdominal",
+      risk: 1
+    },
+    {
+      id: 3,
+      name: "Sangramento intenso",
+      risk: "orange"
+    },
+    {
+      id: 4,
+      name: "Perda de líquido esverdeado espesso",
+      risk: 1
+    },
+    {
+      id: 5,
+      name: "Sangramento moderado",
+      risk: 2
+    }
+  ];
+
+  //lista de sintomas de nausea e mal estar
+  const nauseaSymptomsList = [
+    {
+      id: 1,
+      name: "Vômitos com sinais de desidratação",
+      risk: 2
+    },
+    {
+      id: 2,
+      name: "Vômitos frequentes sem desidratação",
+      risk: 3
     }
   ];
 
@@ -54,36 +150,49 @@ function App() {
     {
       id: 2,
       name: "Sintomas Respiratórios",
-      symptoms: generalSymptomsList
+      symptoms: respiratorySymptomsList
     },
     {
       id: 3,
       name: "Dores",
-      symptoms: generalSymptomsList
+      symptoms: abdominalPainSymptomsList
     },
     {
       id: 4,
       name: "Náusea e Mal Estar",
-      symptoms: generalSymptomsList
+      symptoms: nauseaSymptomsList
     }
 ];
 
 
-    // LOGICA DE STATUS DO USUARIO -- IMPORTANTE!!!
-  /*
-    Type: controla se usuario esta deslogado, transiente ou logado. Se logado, se eh um cliente logado ou um admin logado;
-    User: cada user tem um tipo (admin ou cliente), um nome de usuario e uma senha. Isso eh guardado em db.json.
-    currProduct, cartList e orders: logica de carrinho e de produtos que cliente compra.
-  */
-    const [status, setStatus] = useState(() => {
+  // LOGICA DE STATUS DO USUARIO -- IMPORTANTE!!!
 
-      return {
-        type: "loggedOut",
-        user: null,
-        symptomTypes: symptomTypeList
-      };
+  const [status, setStatus] = useState(() => {
+    // Fornece 'memoria' ao site - permite atualizar pagina e ter dados mantidos ate clicar em sair.
+    const storedStatus = localStorage.getItem("status"); 
+
+    return {
+      type: "loggedOut",
+      user: null,
+      symptomTypes: symptomTypeList,
+      selectedSymptoms: [],
+      risk: null
+    };
   
-    });
+  });
+
+    
+  useEffect(() => {
+    localStorage.setItem("status", JSON.stringify(status));
+  }, [status]);
+
+
+
+  // Visualizando status do usuario
+  useEffect(() => {
+    console.log(status);
+  }, [status]);
+
   return (
     <StatusContext.Provider
       value={{
@@ -97,8 +206,6 @@ function App() {
             <Route index element={<Symptoms />} />
             <Route path="UBS" element={<UBS />} />
             <Route path="UPA" element={<UPA />} />
-  
-            <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
