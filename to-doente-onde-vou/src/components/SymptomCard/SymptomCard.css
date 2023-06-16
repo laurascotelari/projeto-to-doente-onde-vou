@@ -1,0 +1,31 @@
+.symptom-container{
+  border: 2px solid var(--light_gray);
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.symptom-container h3 {
+  font-weight: 100;
+  font-size: 1.3vw;
+  font-family: 'Lato', sans-serif;
+  color: var(--dark_gray_font);
+}
+
+.title-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.symptom-name-container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.symptom-name-container p{
+  font-family: 'Lato', sans-serif;
+  color: var(--dark_gray_font);
+  margin-left: 5px;
+
+}
