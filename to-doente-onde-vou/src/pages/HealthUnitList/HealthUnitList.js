@@ -1,14 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { StatusContext } from "../../App.js";
 import HealthUnitCard from "../../components/HealthUnitCard/HealthUnitCard.js";
 import "./HealthUnitList.css";
 
-function HealthUnitList() {
+function HealthUnitList({filteredList}) {
     const { status, setStatus } = useContext(StatusContext);
+
+    useEffect(() => {
+        console.log(filteredList);
+    }, [filteredList]);
 
     return (
         <div className="unit-list-container">
-            {status.unitList.map((unit) => (
+            {filteredList.map((unit) => (
                 <HealthUnitCard unit={unit} />
             ))}
         </div>

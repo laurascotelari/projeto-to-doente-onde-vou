@@ -14,8 +14,8 @@ import './App.css';
 
 // Paginas do site
 import Symptoms from "./pages/Symptoms.js";
-import UPA from "./pages/UPA.js";
-import UBS from "./pages/UBS.js";
+import UPA from "./pages/UPA/UPA.js";
+import UBS from "./pages/UBS/UBS.js";
 import ConfirmButton from './components/ConfirmButton/ConfirmButton.js';
 import ResultScreen from './pages/ResultScreen/ResultScreen.js';
 import HealthUnitList from './pages/HealthUnitList/HealthUnitList.js';
