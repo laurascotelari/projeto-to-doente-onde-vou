@@ -7,6 +7,7 @@ import ConfirmButton from "../components/ConfirmButton/ConfirmButton";
 
 function Symptoms() {
   const { status, setStatus } = useContext(StatusContext);
+  
 
   return (
     <div className="content-container">

@@ -1,0 +1,40 @@
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.result-title{
+    background-color: var(--purple);
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: white;
+    width: 15%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.result-container h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.option-button{
+    color: var(--light_gray);
+    border: 3px solid var(--light_gray);
+    border-radius: 30px;
+    padding: 10px 35px;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8em;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.option-button:hover{
+    border: 3px solid var(--purple);
+    color: var(--purple);
+}

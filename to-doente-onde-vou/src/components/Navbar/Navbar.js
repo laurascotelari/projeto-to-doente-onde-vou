@@ -112,7 +112,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link
-              to="/"
+              to="/Sintomas"
               className="navLink"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
