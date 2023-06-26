@@ -40,42 +40,42 @@ function App() {
     {
       id: 1,
       name: "Falta de Ar",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 2,
       name: "Sinais de Choque",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 3,
       name: "Dor Intensa",
-      risk: "orange"
+      risk: 2 //laranja
     },
     {
       id: 4,
       name: "Febre Alta (maior que 39ºC)",
-      risk: "orange"
+      risk: 2 //laranja
     },
     {
       id: 5,
       name: "Dor Moderada",
-      risk: 2
+      risk: 3 //amarelo
     },
     {
       id: 6,
       name: "Febre Moderada(entre 38ºC e 39ºC)",
-      risk: 2
+      risk: 3//amarelo
     },
     {
       id: 7,
       name: "Dor Leve",
-      risk: 3
+      risk: 4//verde
     },
     {
       id: 8,
       name: "Febre Baixa(entre 37,5ºC e 37,9ºC)",
-      risk: 3
+      risk: 4//verde
     }
   ];
 
@@ -84,27 +84,27 @@ function App() {
     {
       id: 1,
       name: "Estridor",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 2,
       name: "Dispneia de Início súbito após trauma",
-      risk: "orange"
+      risk: 2 //laranja
     },
     {
       id: 3,
       name: "Dispneia moderada",
-      risk: 2
+      risk: 3 //amarela
     },
     {
       id: 4,
       name: "Nariz entupido com secreção amarelada",
-      risk: 3
+      risk: 4//verde
     },
     {
       id: 5,
       name: "Tosse persistente",
-      risk: 3
+      risk: 4//verde
     }
   ];
 
@@ -113,27 +113,27 @@ function App() {
     {
       id: 1,
       name: "Hemorragia",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 2,
       name: "Trauma abdominal",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 3,
       name: "Sangramento intenso",
-      risk: "orange"
+      risk: 2 //laranja
     },
     {
       id: 4,
       name: "Perda de líquido esverdeado espesso",
-      risk: 1
+      risk: 1 //vermelho
     },
     {
       id: 5,
       name: "Sangramento moderado",
-      risk: 2
+      risk: 3 //amarelo
     }
   ];
 
@@ -142,12 +142,12 @@ function App() {
     {
       id: 1,
       name: "Vômitos com sinais de desidratação",
-      risk: 2
+      risk: 3 //amarelo
     },
     {
       id: 2,
       name: "Vômitos frequentes sem desidratação",
-      risk: 3
+      risk: 4 //verde
     }
   ];
 
@@ -264,8 +264,8 @@ const unitList = [
     email: "Vilaisabel.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
-    position:{latitude: -21.992349962763896, 
-              longitude:-47.89943911038907},
+    position:{latitude: -22.044107963652227, 
+              longitude:-47.88677547314762},
     type: "UBS"
   },
   {
@@ -349,14 +349,14 @@ const unitList = [
   {
     id: 14,
     name: "UPA do Cidade Aracy",
-    address: "Rua Reinaldo Pizzani, 357",
+    address: "Rua Reinaldo Pizani, 357",
     CEP: "13573-228",
     phone: "(16) 3375-1645",
     email: "Aracy.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Todos os dias - 24h",
     img: img_ubs_parque_delta,
-    position:{latitude: -22.0533251807322, 
-              longitude:-47.91435095210383},
+    position:{latitude: -22.053432228689054, 
+              longitude:-47.914513656560835},
     type: "UPA"
   },
   {

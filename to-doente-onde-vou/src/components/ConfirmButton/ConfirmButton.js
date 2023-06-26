@@ -30,8 +30,19 @@ function ConfirmButton() {
       console.log("Overall Risk: " + overallRisk);
     });
 
-    //se o risco for menor que o amarelo (azul ou verde)
-    if (overallRisk < 3){
+    //        Tabela de Riscos
+    //-----------------------------------
+    //   1  |      Vermelho       | UPA
+    //------|---------------------|------
+    //   2  |      Laranja        | UPA
+    //------|---------------------|------
+    //   3  |      Amarelo        | UPA
+    //------|---------------------|------
+    //   4  |       Verde         | UBS
+    //------|---------------------|------
+    //   5  |        Azul         | UBS
+    //-----------------------------------
+    if (overallRisk > 3){
 
       //se for de noite ou madrugada
       if(currentHours < 7 || currentHours > 19){
