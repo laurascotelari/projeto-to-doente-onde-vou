@@ -186,6 +186,8 @@ const unitList = [
     email: "Aracy.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.05877712780322,
+              longitude:-47.90458009137013},
     type: "UBS"
   },
   {
@@ -197,6 +199,8 @@ const unitList = [
     email: "Redencao.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.036444648562288,
+              longitude:-47.90841955149182},
     type: "UBS"
   },
   {
@@ -208,6 +212,8 @@ const unitList = [
     email: "Redencao.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.027042601481423,
+              longitude:-47.913463716522394},
     type: "UBS"
   },
   {
@@ -219,6 +225,8 @@ const unitList = [
     email: "Santafelicia.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_santa_felicia,
+    position:{latitude: -22.00279051873528, 
+              longitude:-47.912852563762335},
     type: "UBS"
   },
   {
@@ -230,6 +238,8 @@ const unitList = [
     email: "Santafelicia.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_santa_paula,
+    position:{latitude: -22.002776410170657, 
+              longitude:-47.901446934314436},
     type: "UBS"
   },
   {
@@ -241,6 +251,8 @@ const unitList = [
     email: "Santafelicia.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -21.992356802109924,
+              longitude:-47.89942704044945},
     type: "UBS"
   },
   {
@@ -252,6 +264,8 @@ const unitList = [
     email: "Vilaisabel.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -21.992349962763896, 
+              longitude:-47.89943911038907},
     type: "UBS"
   },
   {
@@ -263,6 +277,8 @@ const unitList = [
     email: "Vilaisabel.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.03219575828704, 
+              longitude:-47.886606822656745},
     type: "UBS"
   },
   {
@@ -274,6 +290,8 @@ const unitList = [
     email: "Vilaisabel.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.03197353097043, 
+              longitude:-47.866819693217906},
     type: "UBS"
   },
   {
@@ -285,6 +303,8 @@ const unitList = [
     email: "Saojose.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -21.99724572337093, 
+              longitude:-47.878180469284445},
     type: "UBS"
   },
   {
@@ -296,6 +316,8 @@ const unitList = [
     email: "Saojose.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.013243426553988, 
+              longitude:-47.87321195822847},
     type: "UBS"
   },
   {
@@ -307,6 +329,8 @@ const unitList = [
     email: "Saojose.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Seg. à Sex. 7h-19h",
     img: img_ubs_parque_delta,
+    position:{latitude: -20.782936626952985, 
+              longitude:-49.41944029264391},
     type: "UBS"
   },
   {
@@ -318,6 +342,8 @@ const unitList = [
     email: null,
     openingHours: "Todos os dias - 24h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.03538,
+              longitude:-47.89659},
     type: "UPA"
   },
   {
@@ -329,6 +355,8 @@ const unitList = [
     email: "Aracy.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Todos os dias - 24h",
     img: img_ubs_parque_delta,
+    position:{latitude: -22.0533251807322, 
+              longitude:-47.91435095210383},
     type: "UPA"
   },
   {
@@ -340,6 +368,8 @@ const unitList = [
     email: "Santafelicia.Ares@Saocarlos.Sp.Gov.Br",
     openingHours: "Todos os dias - 24h",
     img: img_ubs_parque_delta,
+    position:{latitude: -21.99621056141359, 
+              longitude:-47.9150635907071},
     type: "UPA"
   }
 //-------------------------------------------

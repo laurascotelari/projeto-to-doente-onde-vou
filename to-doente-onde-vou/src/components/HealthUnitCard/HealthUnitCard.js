@@ -34,7 +34,7 @@ function HealthUnitCard({unit}) {
             </div>
 
             <div className='unit-info-container'>
-                <h2>{unit.name}</h2>
+                <h2 className='unit-info-name'>{unit.name}</h2>
                 <hr/>
                 <p><span>Endereço:</span> {unit.address}</p>
                 <p><span>Telefone:</span> {unit.phone}</p>

@@ -30,7 +30,7 @@ function UBS() {
       }
     }
       
-  },[currentTime]);
+  },[currentDay, currentHours]);
 
   useEffect(() =>{
     const filteredUnits = status.unitList.filter(unit => unit.type === "UBS");
