@@ -7,14 +7,20 @@ function HealthUnitCard({unit}) {
 
     //pegando data atual
     const currentHours = currentTime.getHours();
+    const currentMinutes = currentTime.getMinutes();
     const currentDay = currentTime.getDay();
 
     //logica para verificar se a unidade esta aberta ou nao
     useEffect(() =>{
         console.log("Curr day: " + currentDay);
+        console.log("Curr hour: " + currentHours);
+        console.log("Curr min: " + currentMinutes);
+    
         //apenas a UBS possui funcionamento variavel
         if(unit.type === "UBS"){
-            if(currentHours < 7 || currentHours > 19){
+            //verificar condicao depois -> estamos considerando que 
+            //as 19:00 ja vai mostrar que esta fechado
+            if(currentHours < 7 || (currentHours > 18)){
                 setIsOpen(false);
             }else{
                 //currentDay -> dia da semana
