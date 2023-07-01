@@ -25,6 +25,7 @@ import HealthUnitList from './pages/HealthUnitList/HealthUnitList.js';
 import img_ubs_parque_delta from "../src/assets/img/ubs_parque_delta.jpg";
 import img_ubs_santa_felicia from "../src/assets/img/ubs_santa_felicia.jpg"
 import img_ubs_santa_paula from "../src/assets/img/ubs_santa_paula.jpg"
+import Home from './pages/Home/Home.js';
 
 // Criando contexto que mantem dados de usuario e repassa para componentes que necessitem dessa
 // informacao.
@@ -419,6 +420,7 @@ const unitList = [
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
+            <Route path="/" index element={<Home />} />
             <Route path="/Sintomas" index element={<Symptoms />} />
             <Route path="/UBS" element={<UBS />} />
             <Route path="/UPA" element={<UPA />} />
