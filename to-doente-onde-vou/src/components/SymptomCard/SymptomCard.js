@@ -43,13 +43,18 @@ function SymptomCard({symptomType}) {
 
         <div className="title-container"  onClick={showListOfSymptoms}>
           <h3>{symptomType.name}</h3>
+
           <IconContext.Provider value={{ className: "shared-class", size: 30, color: "var(--light_gray)" }}>
             <IoIosArrowDown />
           </IconContext.Provider> 
+
         </div>
 
         <div className='symptom-container'>
-        { showSymptom ? 
+        { 
+          //mostrar os sintomas quando o usuario clicar nele
+          showSymptom ? 
+
           symptomType.symptoms.map((symptom) => (
               <div className="symptom-name-container" onClick={() => selectSymptom(symptom)}>
                 <IconContext.Provider value={{ className: "shared-class", size: 18, color: "var(--purple)" }}>
@@ -68,6 +73,7 @@ function SymptomCard({symptomType}) {
           : 
           <></>
         }
+
         </div>
     </section>
   )

@@ -12,14 +12,13 @@ function SearchBar({handleSearch, emptyInput}) {
         if(e.target.value === ""){
             emptyInput();
         }
-        //handleSearch(inputData);
-
     };
 
 
     const handleSearchClick = () => {
         handleSearch(inputData);
     };
+    
     return ( 
         <div className="search-container">
             <div className="search-container-child">

@@ -22,8 +22,8 @@ function Home() {
         </div>
         <p id="title_text">
 
-          <p id="title_text_1"> To doente, </p>
-          <p id="title_text_2"> Onde vou </p>
+          <p id="title_text_1"> Tô Doente, </p>
+          <p id="title_text_2"> Onde Vou? </p>
 
         </p>
 
@@ -31,7 +31,7 @@ function Home() {
 
 
 
-      <button id="button_in" onClick={click_in} >Entrar</button>
+      <button id="button_in" onClick={click_in}> Começar </button>
 
 
 

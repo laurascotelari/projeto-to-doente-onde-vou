@@ -27,6 +27,7 @@ import img_ubs_parque_delta from "../src/assets/img/ubs_parque_delta.jpg";
 import img_ubs_santa_felicia from "../src/assets/img/ubs_santa_felicia.jpg"
 import img_ubs_santa_paula from "../src/assets/img/ubs_santa_paula.jpg"
 import Home from './pages/Home/Home.js';
+import GuidelineScreen from './pages/GuidelineScreen/GuidelineScreen.js';
 
 // Criando contexto que mantem dados de usuario e repassa para componentes que necessitem dessa
 // informacao.
@@ -393,6 +394,7 @@ const unitList = [
       unitList: unitList,
       selectedSymptoms: [],
       designatedUnitType: null,
+      selectedUnit: null,
       risk: null
     };
   
@@ -428,6 +430,7 @@ const unitList = [
             <Route path="/ResultScreen" element={<ResultScreen />} />
             <Route path="/HealthUnitList" element={<HealthUnitList />} />
             <Route path="/ListAreaScreen" element={<ListAreaScreen />} />
+            <Route path="/GuidelineScreen" element={<GuidelineScreen />} />
           </Route>
         </Routes>
       </BrowserRouter>

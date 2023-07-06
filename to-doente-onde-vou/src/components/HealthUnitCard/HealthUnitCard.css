@@ -1,5 +1,5 @@
 .unit-container{
-    width: 70%;
+    width: 65%;
     border: 2px solid rgba(145, 145, 145, 0.6);
     border-radius: 15px;
     margin: 15px;
@@ -14,7 +14,7 @@
 }
 
 .unit-info-container{
-    margin: 20px 30px;
+    margin: 20px 0;
 }
 
 .unit-info-container hr{
@@ -58,4 +58,11 @@
 .closed{
     color: tomato;
     border: 2px solid tomato;
+}
+
+.select-unit-button{
+    display: flex;
+    width: 550px;
+    flex-direction: row-reverse;
+    justify-content:end;
 }

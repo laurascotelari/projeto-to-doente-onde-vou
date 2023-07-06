@@ -2,10 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { StatusContext } from "../../App.js";
 import { getDistance, findNearest } from 'geolib';
 import HealthUnitList from '../HealthUnitList/HealthUnitList';
+import { useNavigate } from 'react-router-dom';
 
 import "./ResultScreen.css";
-
-import { useNavigate } from 'react-router-dom';
 
 
 function ResultScreen() {
@@ -15,12 +14,13 @@ function ResultScreen() {
     const [nearestLocation, setNearestLocation] = useState(null);
 
     const getUserLocation = () =>{
-
+        //pegando a localizacao do usuario
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
 
         }else{
-            alert("Geolocalização não suportada");
+            //caso o usuario nao queira fornecer (ou nao possa), deve mostrar a 
+            //tela de busca de unidade por bairro
             showAreas();
         }
     }
@@ -101,6 +101,8 @@ function ResultScreen() {
 
     useEffect(() =>{
 
+        //se nenhuma unidade tiver sido designada ao usuario, 
+        //ele deve ser redirecionado a tela de sintomas
         if(!status.designatedUnitType){
             return navigate('/Sintomas');
         }

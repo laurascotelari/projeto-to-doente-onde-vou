@@ -48,7 +48,7 @@ function ConfirmButton() {
       if(currentHours < 7 || currentHours > 19){
         setUnitType("UPA");
       }else{
-          //se for dim de semana
+          //se for fim de semana
           if(currentDay === 0 || currentDay === 6){
             setUnitType("UPA");
           }else{

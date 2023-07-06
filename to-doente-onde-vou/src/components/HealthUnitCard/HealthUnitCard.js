@@ -1,9 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import "./HealthUnitCard.css";
+import Button from '../Button/Button';
+import { StatusContext } from "../../App.js";
+import { useNavigate } from 'react-router-dom';
 
 function HealthUnitCard({unit}) {
+    const { setStatus } = useContext(StatusContext);
     const [currentTime] = useState(new Date());
     const [isOpen , setIsOpen] = useState(true);
+    const [selectedUnit, setSelectedUnit] = useState(null);
+    const navigate = useNavigate();
+
+
+    const selectUnit = () =>{
+        setSelectedUnit(unit);
+    }
+
+    useEffect(() => {
+        //se o usuario tiver selecionado a unidade
+        if (selectedUnit) {
+            //salva isso no local storage
+            setStatus((prevStatus) => ({
+                ...prevStatus,
+                selectedUnit: selectedUnit
+            }));
+        
+            return navigate('/GuidelineScreen');
+        }
+    }, [selectedUnit]);
 
     //pegando data atual
     const currentHours = currentTime.getHours();
@@ -51,6 +75,10 @@ function HealthUnitCard({unit}) {
                     <h4 className={isOpen ? 'open' : 'closed'}>
                         {isOpen ? 'Aberto' : 'Fechado'}
                     </h4>
+                </div>
+            
+                <div className='select-unit-button'>
+                    <Button onClick={selectUnit} > Selecionar </Button>
                 </div>
             </div>
 

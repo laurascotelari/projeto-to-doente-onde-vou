@@ -39,20 +39,21 @@ function ListAreaScreen() {
         },
         {
             id: 5,
-            name: 'Jardim Botafogo 1',
-            UBS: 'UBS Botafogo Valeria De Cibelli',
+            name: 'Vila Marcelino',
+            UBS: 'UBS Vila Isabel Rosana Cecato Lahr',
             UPA: 'UPA da Vila Prado',
-          }
+        }
     ];
   
     const [areaList, setAreaList] = useState(areas);
-  
+    
+    //funcao para atualizar a lista de bairros que aparecem na tela
     const handleSearch = (searched_word) => {
-      console.log("App.jsx -> handleSearch: " + searched_word);
       const match_areaList = searchArea(searched_word);
       setAreaList(match_areaList);
     };
-  
+    
+    //quando o input estiver vazio, todas as opções devem voltar a aparecer na tela
     const emptyInput = () => {
       setAreaList(areas);
     };
@@ -67,6 +68,7 @@ function ListAreaScreen() {
       });
     };
 
+    //seleciona a regiao mais compativel com o que o usuario digitou
     const showUnit = () => {
       setSelectedArea(areaList[0]);
     };
@@ -79,6 +81,7 @@ function ListAreaScreen() {
         if(status.designatedUnitType === "UPA"){
           condition = selectedArea.UPA;
         }
+        //filtrando a lista para pegar apenas a unidade designada ao usuario (UBS ou UPA)
         setFilteredList(status.unitList.filter(unit => unit.name === condition));
       }
 
