@@ -7,6 +7,5 @@ Este é o repositório destinado ao projeto final desenvolvido para a disciplina
 |:-----------------------------:|:---------:|:---------------------------:|
 |     Danielle Modesti          |  12543544 |    dani.modesti@usp.br     |
 |   Eric Rodrigues das Chagas   |  12623971 |    eric.r.c@usp.br         |
-|   Gabriela Bacarin Marcondes  |  10873351 |    bacarin@usp.br          |
 |   Hélio Nogueira Cardoso      |  10310227 |    helionc1999@usp.br      |
 |   Laura Ferré Scotelari       |  12543436 |   laura.scotelari@usp.br   |
