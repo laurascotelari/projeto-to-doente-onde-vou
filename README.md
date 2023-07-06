@@ -1,7 +1,7 @@
 # Projeto Engenharia de Software - Tô Doente, Onde Vou?
 
 # 0. Informações Gerais
-Este é o repositório destinado ao projeto final desenvolvido para a disciplina '*SSC0130 - Engenharia de Software (2023)*', ministrada pela professora Simone do Rocio Senger de Souza, do ICMC-USP São Carlos. O desenvolvimento conta com a colaboração dos seguintes estudantes:
+Este é o repositório destinado ao projeto final desenvolvido para a disciplina '*SSC0130 - Engenharia de Software (2023)*' (primeiro semestre de 2023), ministrada pela professora Simone do Rocio Senger de Souza, do ICMC-USP São Carlos. O desenvolvimento conta com a colaboração dos seguintes estudantes do Grupo 5 (5ive Bytes):
 
 |        Nome                   |    NUSP   |           E-mail           |
 |:-----------------------------:|:---------:|:---------------------------:|
