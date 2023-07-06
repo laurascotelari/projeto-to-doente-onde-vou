@@ -19,6 +19,7 @@ import UBS from "./pages/UBS/UBS.js";
 import ConfirmButton from './components/ConfirmButton/ConfirmButton.js';
 import ResultScreen from './pages/ResultScreen/ResultScreen.js';
 import HealthUnitList from './pages/HealthUnitList/HealthUnitList.js';
+import ListAreaScreen from './pages/ListAreaScreen/ListAreaScreen.js';
 
 
 //imagens (mudar depois)
@@ -426,6 +427,7 @@ const unitList = [
             <Route path="/UPA" element={<UPA />} />
             <Route path="/ResultScreen" element={<ResultScreen />} />
             <Route path="/HealthUnitList" element={<HealthUnitList />} />
+            <Route path="/ListAreaScreen" element={<ListAreaScreen />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,19 @@
+.area-container h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--dark_gray_font);
+    font-size: 1.15em;
+    font-weight: 300;
+}
+
+.area-container{
+    background-color: #CCC;
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.area-container:hover{
+    background-color: var(--purple);
+}

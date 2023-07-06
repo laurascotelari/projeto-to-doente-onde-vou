@@ -21,7 +21,12 @@ function ResultScreen() {
 
         }else{
             alert("Geolocalização não suportada");
+            showAreas();
         }
+    }
+
+    const showAreas = () =>{
+        return navigate('/ListAreaScreen');
     }
 
 
@@ -67,6 +72,7 @@ function ResultScreen() {
     }
     const locationError = () =>{
         alert("Não foi possível acessar a geolocalização");
+        return navigate('/ListAreaScreen');
     }
 
     useEffect(() =>{
@@ -127,7 +133,7 @@ function ResultScreen() {
                 <div className="result-container">
                     <h1>Você deve se dirigir a uma:</h1>
                     <h1 className="result-title">{status.designatedUnitType}</h1>
-                    <button className="option-button"> Já sei para qual {status.designatedUnitType} devo ir</button>
+                    <button className="option-button" onClick={showAreas}> Já sei para qual {status.designatedUnitType} devo ir</button>
                     <button className="option-button" onClick={getUserLocation}> Não sei, preciso de uma sugestão</button>
                 
                 </div>
