@@ -12,3 +12,6 @@ Este é o repositório destinado ao projeto final desenvolvido para a disciplina
 
 # 1. Escopo do Projeto
 O objetivo do projeto é desenvolver um sistema que ajude pessoas que se encontram doentes a entender qual a unidade de saúde correta que devem procurar (UBS, UPA, Emergência, etc.). A ideia é evitar que as pessoas acessem o serviço indevido, evitando aglomerações desnecessárias ou atrasos para atendimento.
+
+# 2. Procedimento execução
+Tendo o node e o npm instalados e dentro 
