@@ -1,0 +1,27 @@
+.guideline-container{
+    width: 45%;
+    border: 2px solid rgba(145, 145, 145, 0.6);
+    border-radius: 15px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.unit-guideline-container{
+    display: flex;
+}
+
+.guideline-text{
+    font-family: 'Lato', sans-serif;
+    color: var(--dark_gray_font);
+    font-size: 1.15em;
+    margin: 5px;
+}
+
+.button-guideline-container{
+    display: grid;
+    padding: 10px 30px;
+    width: 100%;
+}
