@@ -27,3 +27,11 @@ npm start
 ```
 
 Se seu navegador não abrir automaticamente, acesse seu navegador no endereço "localhost:3000".
+
+# 3. Continuidade do Projeto
+Ressalta-se que o projeto dentro deste repositório se trata de um MVP, e não é sua versão final, com tudo o que a equipe gostaria de acrescentar ao software. Assim, próximos passos seriam:
+- Cadastro de usuários;
+- Implementação de seções informativas (explicando conceitos da área da saúde, como uma 'Wiki');
+- Implementação de gerenciamento (administradores e autorizações em diferentes níveis em relação ao tipo de usuário);
+- Maior dinamismo no armazenamento dos endereços das unidades de saúde, com um backend e um banco de dados bem estruturados;
+- Ampliação de atuação: tornar a aplicação apta para atender outras regiões, não somente São Carlos.
