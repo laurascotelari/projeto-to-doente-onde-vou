@@ -4,6 +4,8 @@ import "./Home.css";
 
 import { useNavigate } from 'react-router-dom';
 import heart_icon from "../../assets/icon/heart_icon.png";
+import SOSButton from '../../components/SOSButton/SOSButton';
+
 
 function Home() {
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ function Home() {
 
       <button id="button_in" onClick={click_in}> Começar </button>
 
-
+      <SOSButton />
 
     </div>
     )

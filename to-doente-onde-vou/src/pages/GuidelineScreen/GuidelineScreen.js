@@ -4,6 +4,7 @@ import img_document from '../../assets/img/rg.png';
 import Button from '../../components/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import "./GuidelineScreen.css";
+import SOSButton from '../../components/SOSButton/SOSButton.js';
 
 function GuidelineScreen() {
     const { status, setStatus } = useContext(StatusContext);
@@ -46,6 +47,8 @@ function GuidelineScreen() {
                 <Button onClick={goToLandingPage}> Finalizar </Button>
 
             </div>
+
+            <SOSButton />
 
         </div>
     );

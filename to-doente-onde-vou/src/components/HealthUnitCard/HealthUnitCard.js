@@ -68,7 +68,6 @@ function HealthUnitCard({unit}) {
                 <hr/>
                 <p><span>Endereço:</span> {unit.address}</p>
                 <p><span>Telefone:</span> {unit.phone}</p>
-                <br/>
                 <p><span>Horário de Funcionamento:</span></p>
                 <div className='opening-hours-container'>
                     <p>{unit.openingHours}</p>

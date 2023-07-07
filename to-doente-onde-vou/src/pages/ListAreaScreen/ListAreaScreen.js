@@ -5,6 +5,7 @@ import Areas from "../../components/Areas/Areas";
 import Button from "../../components/Button/Button";
 import HealthUnitList from '../HealthUnitList/HealthUnitList';
 import "./ListAreaScreen.css"; 
+import SOSButton from "../../components/SOSButton/SOSButton.js";
 
 function ListAreaScreen() {
     const { status, setStatus } = useContext(StatusContext);
@@ -96,7 +97,7 @@ function ListAreaScreen() {
           :
           <div className="list-area-container">
             <div className="search-area-container">
-              <h1>Selecione o Bairro em que mora:</h1>
+              <h1 className="list-area-title">Selecione o Bairro em que mora:</h1>
               <SearchBar handleSearch={handleSearch} emptyInput={emptyInput}/>
               <div className="area-list-container">
                 <Areas areas={areaList} />
@@ -105,6 +106,7 @@ function ListAreaScreen() {
             </div>
           </div>
         }
+        <SOSButton />
         </>
     
   )

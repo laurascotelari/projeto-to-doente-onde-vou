@@ -4,6 +4,7 @@ import { StatusContext } from "../App.js";
 
 import "./Symptoms.css"
 import ConfirmButton from "../components/ConfirmButton/ConfirmButton";
+import SOSButton from "../components/SOSButton/SOSButton";
 
 function Symptoms() {
   const { status, setStatus } = useContext(StatusContext);
@@ -22,6 +23,7 @@ function Symptoms() {
         <div className="confirm-button-container">
           <ConfirmButton />
         </div>
+        <SOSButton />
     </div>
   )
 }

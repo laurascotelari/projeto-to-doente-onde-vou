@@ -10,7 +10,7 @@
 
 .unit-title{
     background-color: var(--purple);
-    padding: 35px;
+    padding: 30px;
     border-radius: 30px;
     color: #ffffff;
     font-size: 3em;
@@ -34,7 +34,7 @@
 .unit-about-container p{
     font-family: 'Lato', sans-serif;
     color: var(--dark_gray_font);
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .unit-type-container h3{

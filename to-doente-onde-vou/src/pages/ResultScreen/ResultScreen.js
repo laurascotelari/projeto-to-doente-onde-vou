@@ -5,6 +5,7 @@ import HealthUnitList from '../HealthUnitList/HealthUnitList';
 import { useNavigate } from 'react-router-dom';
 
 import "./ResultScreen.css";
+import SOSButton from "../../components/SOSButton/SOSButton.js";
 
 
 function ResultScreen() {
@@ -148,6 +149,7 @@ function ResultScreen() {
         
             </>
         }
+        <SOSButton />
         </>
     )
 }

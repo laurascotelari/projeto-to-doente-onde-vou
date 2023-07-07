@@ -30,5 +30,7 @@
   font-family: 'Lato', sans-serif;
   color: var(--dark_gray_font);
   margin-left: 5px;
+  font-size: 1em;
+  margin-top: 0;
 
 }

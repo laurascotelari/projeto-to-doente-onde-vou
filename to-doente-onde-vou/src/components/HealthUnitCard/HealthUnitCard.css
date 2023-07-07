@@ -4,6 +4,7 @@
     border-radius: 15px;
     margin: 15px;
     display: flex;
+    
 }
 
 .unit-img-container img{
@@ -13,9 +14,6 @@
     border-radius: 15px;
 }
 
-.unit-info-container{
-    margin: 20px 0;
-}
 
 .unit-info-container hr{
     margin: 10px 0;
@@ -24,23 +22,25 @@
 .unit-info-name{
     font-family: 'Lato', sans-serif;
     color: var(--purple);
+    font-size: 1.5em;
+    margin-top: 10px;
+    
 }
 
 .unit-info-container p{
     font-family: 'Lato', sans-serif;
     color: var(--dark_gray_font);
     font-size: 1.15em;
-    margin-top: 5px;
 }
 
 .unit-info-container span{
     font-family: 'Lato', sans-serif;
     color: var(--dark_gray_font);
     font-weight: bold;
+    margin: 0;
 }
 
 .opening-hours-container{
-    margin: 10px 0;
     display: flex;
 }
 
@@ -49,6 +49,8 @@
     padding: 5px 10px;
     font-family: 'Lato', sans-serif;
     margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
 }
 .open{
     color: #1a9936;
@@ -65,4 +67,5 @@
     width: 550px;
     flex-direction: row-reverse;
     justify-content:end;
+    margin-bottom: 15px;
 }

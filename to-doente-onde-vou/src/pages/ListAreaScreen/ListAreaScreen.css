@@ -16,3 +16,10 @@
 .area-list-container{
     margin: 20px;
 }
+
+.list-area-title{
+    font-family: 'Lato', sans-serif;
+    color: var(--dark_gray_font);
+    font-size: 2em;
+    margin-top: 0;
+}

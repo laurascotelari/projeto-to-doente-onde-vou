@@ -4,6 +4,7 @@ import { StatusContext } from "../../App.js";
 import "../../pages/Units.css";
 
 import img_document from '../../assets/img/rg.png';
+import SOSButton from '../../components/SOSButton/SOSButton';
 
 function UBS() {
   const { status } = useContext(StatusContext);
@@ -100,7 +101,7 @@ function UBS() {
           filteredList && <HealthUnitList filteredList={filteredList} />
         }
       </div>
-
+      <SOSButton />
     </div>
   )
 }

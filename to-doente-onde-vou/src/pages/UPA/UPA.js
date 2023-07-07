@@ -4,6 +4,7 @@ import { StatusContext } from "../../App.js";
 import "../../pages/Units.css";
 
 import img_document from '../../assets/img/rg.png';
+import SOSButton from '../../components/SOSButton/SOSButton';
 
 function UPA() {
   const { status } = useContext(StatusContext);
@@ -81,7 +82,7 @@ function UPA() {
           filteredList && <HealthUnitList filteredList={filteredList} />
         }
       </div>
-
+      <SOSButton />
     </div>
   )
 }
