@@ -14,4 +14,16 @@ Este é o repositório destinado ao projeto final desenvolvido para a disciplina
 O objetivo do projeto é desenvolver um sistema que ajude pessoas que se encontram doentes a entender qual a unidade de saúde correta que devem procurar (UBS, UPA, Emergência, etc.). A ideia é evitar que as pessoas acessem o serviço indevido, evitando aglomerações desnecessárias ou atrasos para atendimento.
 
 # 2. Procedimento execução
-Tendo o node e o npm instalados e dentro 
+Tendo o node e o npm instalados em suas últimas versões e dentro do diretório 'to-doente-onde-vou' do projeto, rode o seguinte comando no terminal para instalar as dependências:
+
+```
+npm install
+```
+
+Por fim, para mostrar uma apresentação da aplicação, rode em seguida:
+
+```
+npm start
+```
+
+Se seu navegador não abrir automaticamente, acesse seu navegador no endereço "localhost:3000".
